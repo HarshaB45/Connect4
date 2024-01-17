@@ -49,6 +49,10 @@ function gameCheck(board, row, column, player) {
         //console.log("Player", player + 1, "wins");
         var Playerwin = document.getElementById('player-win-alert');
         Playerwin.innerHTML = "Player " + (player + 1) + " wins";
+        document.getElementById('player-turn').style.visibility = 'hidden';
+
+        
+        
     }
     else {
         console.log("not yet");
@@ -202,7 +206,6 @@ function rightDiagonalCheck(board, row, column, player) {
 
 
 }
-
 
 
 
