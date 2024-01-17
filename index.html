@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "style.css" rel= "stylesheet">
+    <script src="script.js"></script>
+    <title>Connect 4</title>
+</head>
+<body>
+
+    
+
+    <div><h1 onclick="location.reload();">Connect 4</h1></div>
+
+    
+    <p id="player-turn">Player 1's turn</p>
+
+    <div class="flex-container">
+            
+
+        <table class="board">
+            <tr>
+             	<td id="h11" class="cell"></td>
+                <td id="h12" class="cell"></td>
+                <td id="h13" class="cell"></td>
+                <td id="h14" class="cell"></td>
+                <td id="h15" class="cell"></td>
+                <td id="h16" class="cell"></td>
+                <td id="h17" class="cell"></td>
+            </tr>
+            <tr>
+                <td id="h21" class="cell"></td>
+                <td id="h22" class="cell"></td>
+                <td id="h23" class="cell"></td>
+                <td id="h24" class="cell"></td>
+                <td id="h25" class="cell"></td>
+                <td id="h26" class="cell"></td>
+                <td id="h27" class="cell"></td>
+            </tr>
+            <tr>
+                <td id="h31" class="cell"></td>
+                <td id="h32" class="cell"></td>
+                <td id="h33" class="cell"></td>
+                <td id="h34" class="cell"></td>
+                <td id="h35" class="cell"></td>
+                <td id="h36" class="cell"></td>
+                <td id="h37" class="cell"></td>
+            </tr>
+            <tr>
+                <td id="h41" class="cell"></td>
+                <td id="h42" class="cell"></td>
+                <td id="h43" class="cell"></td>
+                <td id="h44" class="cell"></td>
+                <td id="h45" class="cell"></td>
+                <td id="h46" class="cell"></td>
+                <td id="h47" class="cell"></td>
+            </tr>
+            <tr>
+                <td id="h51" class="cell"></td>
+                <td id="h52" class="cell"></td>
+                <td id="h53" class="cell"></td>
+                <td id="h54" class="cell"></td>
+                <td id="h55" class="cell"></td>
+                <td id="h56" class="cell"></td>
+                <td id="h57" class="cell"></td>
+            </tr>
+            <tr>
+                <td id="h61" class="cell"></td>
+                <td id="h62" class="cell"></td>
+                <td id="h63" class="cell"></td>
+                <td id="h64" class="cell"></td>
+                <td id="h65" class="cell"></td>
+                <td id="h66" class="cell"></td>
+                <td id="h67" class="cell"></td>
+            </tr>
+        </table>
+        
+            
+        <table class="box">
+            <tr>
+               <td id="11" class="cell"><button onclick="putTokenintheColumn(0)">Click me!</button></td>
+               <td id="12" class="cell"><button onclick="putTokenintheColumn(1)">Click me!</button></td>
+               <td id="13" class="cell"><button onclick="putTokenintheColumn(2)">Click me!</button></td>
+               <td id="14" class="cell"><button onclick="putTokenintheColumn(3)">Click me!</button></td>
+               <td id="15" class="cell"><button onclick="putTokenintheColumn(4)">Click me!</button></td>
+               <td id="16" class="cell"><button onclick="putTokenintheColumn(5)">Click me!</button></td>
+               <td id="17" class="cell"><button onclick="putTokenintheColumn(6)">Click me!</button></td>
+           </tr>
+        </table>
+    </div>
+
+    <h2 id="column-full-alert"></h2>
+    <h3 id="player-win-alert"></h3>
+
+    <p><strong><u>Connect 4 Instructions</u></strong>
+    <br>
+    <br>
+    Make a line of 4 either horizontally, vertically
+    or diagonally. In order to place a token in one of 
+    the columns, who have to click on one of the cells 
+    below, where it is written "Click me!". Restart the 
+    game by pressing the Connect 4 heading text above.
+        
+    
+</body>
+</html>

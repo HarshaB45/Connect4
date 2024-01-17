@@ -1,0 +1,82 @@
+h1 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 1.6em;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  
+  
+  
+  text-align: justify;
+}
+
+#player-turn {
+  text-align: center;
+}
+
+
+table, th, td {
+  border: 2px solid black;
+}
+  
+body {
+  margin: 10%;
+}
+
+/* This pertains to the Connect 4 Board, where the players will play the game */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* This is the board */
+.board {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(156, 156, 232);
+}
+
+/* Box beneath the board */
+.box {
+  margin-top: 3%;
+  width: 300px;
+  height: 55px;
+  background-color: rgb(232, 194, 156);
+}
+
+.cell {
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+
+/* Additional styles for buttons within cells */
+.box .cell {
+  position: relative;
+}
+
+.box button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+
